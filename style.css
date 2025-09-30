@@ -1,0 +1,66 @@
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+
+  /* background-color: navy; */
+  font-size: 20pt;
+  color: beige;
+
+  background-image: linear-gradient(90deg, midnightblue, beige);
+}
+
+a {
+  text-decoration: none;
+  color: beige;
+
+  &:hover {
+    color: yellow;
+  }
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5em 0;
+  margin: 0;
+}
+
+.main {
+  background-color: midnightblue;
+  padding: 8pt;
+}
+
+.clock {
+  font-size: 2em;
+}
+
+.nav {
+  display: flex;
+  text-align: center;
+
+  section {
+    padding: 0 2em;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}

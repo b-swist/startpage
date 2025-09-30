@@ -1,0 +1,48 @@
+{
+  "searchEngine": "https://duckduckgo.com/?q=%s",
+  "bookmarks": [
+    {
+      "title": "socials",
+      "children": [
+        {
+          "title": "Github",
+          "url": "https://github.com"
+        },
+        {
+          "title": "Gmail",
+          "url": "https://google.com/mail"
+        },
+        {
+          "title": "MS Teams",
+          "url": "https://teams.microsoft.com"
+        }
+      ]
+    },
+    {
+      "title": "reddit",
+      "children": [
+        {
+          "title": "Unixporn",
+          "url": "https://reddit.com/r/unixporn"
+        },
+        {
+          "title": "Startpages",
+          "url": "https://reddit.com/r/startpages"
+        }
+      ]
+    },
+    {
+      "title": "math",
+      "children": [
+        {
+          "title": "Desmos",
+          "url": "https://www.desmos.com/calculator"
+        },
+        {
+          "title": "Wolfram Alpha",
+          "url": "https://www.wolframalpha.com/"
+        }
+      ]
+    }
+  ]
+}
