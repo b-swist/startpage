@@ -8,7 +8,7 @@ function showTime() {
 
   const time = h + ":" + m + ":" + s;
 
-  document.getElementById("clock").textContent = time;
+  document.getElementById("clock").innerText = time;
 }
 
 setInterval(showTime, 1000);

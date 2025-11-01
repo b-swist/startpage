@@ -2,23 +2,31 @@ const bookmarks = [
   {
     title: "socials",
     children: [
-      { title: "Github", url: "https://github.com" },
-      { title: "Gmail", url: "https://google.com/mail" },
-      { title: "MS Teams", url: "https://teams.microsoft.com" },
+      { title: "gmail", url: "https://google.com/mail" },
+      { title: "teams", url: "https://teams.microsoft.com" },
     ],
   },
   {
     title: "reddit",
     children: [
-      { title: "Unixporn", url: "https://reddit.com/r/unixporn" },
-      { title: "Startpages", url: "https://reddit.com/r/startpages" },
+      { title: "r/unixporn", url: "https://reddit.com/r/unixporn" },
+      { title: "r/startpages", url: "https://reddit.com/r/startpages" },
+      { title: "r/linux", url: "https://www.reddit.com/r/linux" },
     ],
   },
   {
     title: "math",
     children: [
-      { title: "Desmos", url: "https://www.desmos.com/calculator" },
-      { title: "Wolfram Alpha", url: "https://www.wolframalpha.com/" },
+      { title: "desmos", url: "https://www.desmos.com/calculator" },
+      { title: "wolfram", url: "https://www.wolframalpha.com" },
+    ],
+  },
+  {
+    title: "coding",
+    children: [
+      { title: "github", url: "https://github.com" },
+      { title: "stack overflow", url: "https://stackoverflow.com" },
+      { title: "chatgpt", url: "https://chatgpt.com" },
     ],
   },
 ];
