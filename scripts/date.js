@@ -1,5 +1,6 @@
-const padNumber = (num) => num.toString().padStart(2, "0");
+const clock = document.getElementById("clock");
 
+const padNumber = (num) => num.toString().padStart(2, "0");
 function showTime() {
   const d = new Date();
   const h = padNumber(d.getHours());
@@ -8,9 +9,8 @@ function showTime() {
 
   const time = h + ":" + m + ":" + s;
 
-  document.getElementById("clock").innerText = time;
+  clock.textContent = time;
 }
 
 setInterval(showTime, 1000);
-
 showTime();
