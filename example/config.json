@@ -1,62 +1,65 @@
-[
-    {
-        "title": "socials",
-        "children": [
-            {
-                "title": "gmail",
-                "url": "https://google.com/mail"
-            },
-            {
-                "title": "teams",
-                "url": "https://teams.microsoft.com"
-            }
-        ]
-    },
-    {
-        "title": "reddit",
-        "children": [
-            {
-                "title": "r/unixporn",
-                "url": "https://reddit.com/r/unixporn"
-            },
-            {
-                "title": "r/startpages",
-                "url": "https://reddit.com/r/startpages"
-            },
-            {
-                "title": "r/linux",
-                "url": "https://www.reddit.com/r/linux"
-            }
-        ]
-    },
-    {
-        "title": "math",
-        "children": [
-            {
-                "title": "desmos",
-                "url": "https://www.desmos.com/calculator"
-            },
-            {
-                "title": "wolfram",
-                "url": "https://www.wolframalpha.com"
-            }
-        ]
-    },
-    {
-        "title": "coding",
-        "children": [
-            {
-                "title": "github",
-                "url": "https://github.com"
-            },
-            {
-                "title": "stack overflow",
-                "url": "https://stackoverflow.com"
-            },
-            {
-                "title": "chatgpt",
-                "url": "https://chatgpt.com"
-            }
-        ]
-    }
-]
+{
+    "searchUrl": "https://duckduckgo.com/?q=%s",
+    "bookmarks": [
+        {
+            "title": "socials",
+            "children": [
+                {
+                    "title": "gmail",
+                    "url": "https://google.com/mail"
+                },
+                {
+                    "title": "teams",
+                    "url": "https://teams.microsoft.com"
+                }
+            ]
+        },
+        {
+            "title": "reddit",
+            "children": [
+                {
+                    "title": "r/unixporn",
+                    "url": "https://reddit.com/r/unixporn"
+                },
+                {
+                    "title": "r/startpages",
+                    "url": "https://reddit.com/r/startpages"
+                },
+                {
+                    "title": "r/linux",
+                    "url": "https://www.reddit.com/r/linux"
+                }
+            ]
+        },
+        {
+            "title": "math",
+            "children": [
+                {
+                    "title": "desmos",
+                    "url": "https://www.desmos.com/calculator"
+                },
+                {
+                    "title": "wolfram",
+                    "url": "https://www.wolframalpha.com"
+                }
+            ]
+        },
+        {
+            "title": "coding",
+            "children": [
+                {
+                    "title": "github",
+                    "url": "https://github.com"
+                },
+                {
+                    "title": "stack overflow",
+                    "url": "https://stackoverflow.com"
+                },
+                {
+                    "title": "chatgpt",
+                    "url": "https://chatgpt.com"
+                }
+            ]
+        }
+    ]
+}

@@ -6,13 +6,12 @@
 
 :root {
   font-size: 16pt;
-  font-family: monospace;
+  font-family: var(--font), monospace;
 
-  --bg: #32302f;
-  --bg-dark: #282828;
+  --font: "Cascadia Code";
+  --bg: #282828;
   --bg-light: #3c3836;
 
-  --border: #bdae93;
   --placeholder: #928374;
   --text: #ebdbb2;
 
@@ -37,45 +36,42 @@ body {
   padding: 0;
   margin: 0;
 
-  background-color: var(--bg-dark);
+  line-height: 1.4;
+  letter-spacing: 0;
+  background-color: var(--bg);
   color: var(--text);
 }
 
 a {
   text-decoration: none;
   color: var(--text);
-}
-
-input {
-  background-color: var(--bg-light);
-  color: var(--text);
-  font-size: 0.8rem;
-
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0.5em 0;
-  margin: 0.5em 0;
-
-  border: none;
-  border-radius: 1vmin;
-  text-indent: 1em;
-
-  &:focus {
-    outline: none;
-  }
-
-  &::placeholder {
-    color: var(--placeholder);
+  &:hover {
+    text-decoration: underline; /* unsure */
   }
 }
 
-nav {
+*::selection {
+  color: var(--bg);
+  background-color: var(--orange-light);
+}
+
+.container {
   display: flex;
+  flex-direction: column;
+  gap: 2ch;
+}
+
+#nav {
+  display: flex;
+  font-size: 1rem;
+  column-gap: 1ch;
   background-color: var(--bg);
-  padding: 1em;
+  border: 0.25ch solid var(--bg-light);
+  border-radius: 0.5ch;
+  padding: 1ch;
 
   section {
-    padding: 0 1em;
+    padding: 0 1ch;
     &:nth-of-type(5n + 1) {
       color: var(--red);
       a:hover {
@@ -111,27 +107,50 @@ nav {
   h2 {
     margin: 0;
     font-size: 1em;
+    font-weight: bold;
+    /* text-indent: 1ch; */
   }
 
   ul {
-    list-style: custom inside;
-    margin: 1em 0 0 0;
+    list-style: custom;
+    list-style-position: inside;
+    margin-top: 1ch;
+    margin-bottom: 0;
     padding: 0;
   }
-}
-
-.border-common {
-  border: 3px solid var(--border);
-  border-radius: 1vmin;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
 }
 
 #clock {
   text-align: center;
   font-size: 3rem;
+}
+
+#searchbox {
+  font-family: inherit;
+  font-size: 0.95rem;
+  background-color: var(--bg-light);
+  color: var(--text);
+  width: 60vw;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5ch 1ch;
+  margin: 0.5ch 0;
+
+  border: none;
+  border-radius: 0.5ch;
+
+  opacity: 0.9;
+  filter: brightness(0.9);
+
+  &:focus {
+    outline: none;
+
+    opacity: 1;
+    filter: none;
+  }
+
+  &::placeholder {
+    color: var(--placeholder);
+  }
 }
